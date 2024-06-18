@@ -53,6 +53,7 @@ const Generatepass = (props) => {
             password += charpool.charAt(Math.floor(Math.random() * charpool.length));
         }
         props.setPassword(password);
+
     }
 
 

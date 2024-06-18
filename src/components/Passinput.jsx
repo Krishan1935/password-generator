@@ -1,11 +1,13 @@
 import { FaRegCopy } from "react-icons/fa";
 import React from 'react'
 import Font from "react-font";
+import { toast } from "react-toastify";
 
 const Passinput = (props) => {
     function copyHandler() {
         navigator.clipboard.writeText(props.password);
         props.setPassword('')
+        toast.info("Copied to Clipboard");
     }
 
   return (
